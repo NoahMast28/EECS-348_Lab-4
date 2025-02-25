@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Practice 2: CSS Font Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Font Control</h1>
+    <p id="text">This is a sample paragraph. You can change its color and border.</p>
+    <label for="color">Text Color (eg 255,0,0):</label>
+    <input type="text" id="color">
+    <br>
+
+    <label for="borderColor">Border Color (eg 255,0,0):</label>
+    <input type="text" id="borderColor">
+    <br>
+
+    <label for="borderWidth">Border Width (eg 2):</label>
+    <input type="number" id="borderWidth">
+    <br>
+
+    <button onclick="applyStyles()">Apply</button>
+    <script>
+        function applyStyles() {
+            const text = document.getElementById('text');
+            const color = document.getElementById('color').value;
+            const borderColor = document.getElementById('borderColor').value;
+            const borderWidth = document.getElementById('borderWidth').value;
+            if (color) {
+                text.style.color = `rgb(${color})`;
+            }
+
+            if (borderColor) {
+                text.style.borderColor = `rgb(${borderColor})`;
+            }
+
+            if (borderWidth) {
+                text.style.borderWidth = `${borderWidth}px`;
+            }
+        }
+    </script>
+</body>
+</html>

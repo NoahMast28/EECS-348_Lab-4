@@ -2,10 +2,5 @@ body {
     font-family: Lucida, cursive;
     background-color: #648c75;
     text-align: center;
-}
-img {
-    width: 200px;
-}
-iframe {
-    margin-top: 25px;
+    font-size: 25px;
 }
